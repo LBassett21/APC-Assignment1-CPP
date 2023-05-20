@@ -29,7 +29,16 @@ int main() {
 	Instructor1.searchCourse(1390141);
 
 	cout << "-----\n";
-
+	admin Admin1("Cindy", "Rosner", 000001);
+	cout << "Admin info: \n Name: " << Admin1.getFirstName() << " " << Admin1.getLastName() << "\n ID#: " << Admin1.getID() << endl;
+	Admin1.addRemoveCourse(true, 1390141);
+	Admin1.addRemoveCourse(false, 1390141);
+	Admin1.addRemoveUser(true, 403388);
+	Admin1.addRemoveUser(false, 403388);
+	Admin1.addRemoveStudentCourse(true, 1390141, 403388);
+	Admin1.addRemoveStudentCourse(false, 1390141, 403388);
+	cout << Admin1.printRoster(1390141) << endl;
+	cout << Admin1.printSchedule(1390141) << endl;
 
 	return 0;
 }
