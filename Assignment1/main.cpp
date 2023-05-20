@@ -20,5 +20,16 @@ int main() {
 	cout << Student1.showCourses() << endl;
 	cout << Student1.showSchedule() << endl;
 
+	cout << "-----\n";
+
+	instructor Instructor1("Marisha", "Rawlins", 111111);
+	cout << "Instructor info: \n Name: " << Instructor1.getFirstName() << " " << Instructor1.getLastName() << "\n ID#: " << Instructor1.getID() << endl;
+	cout << Instructor1.printSchedule() << endl;
+	cout << Instructor1.printRoster() << endl;
+	Instructor1.searchCourse(1390141);
+
+	cout << "-----\n";
+
+
 	return 0;
 }
